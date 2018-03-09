@@ -76,7 +76,7 @@ Essa sugestão é apenas para melhor compreensão do desafio. Não é necessári
 
 #### Acesso ao banco de dados
 
-Já tem um banco de dados criado para facilitar o setup.
+Já tem um banco de dados criado para facilitar o setup. Sua aplicaçao poderá se conectar direto com ela. Para visualização dos dados sugiro o site http://www.phpmyadmin.co que serve um phpMyAdmin remoto.
 
 | host | user | pass | database |
 | --- | --- | --- | --- |
