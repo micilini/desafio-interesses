@@ -81,7 +81,9 @@ Já tem um banco de dados criado para facilitar o setup.
 host: isl-instance-db-dev.cnqjbbch9s0a.us-east-1.rds.amazonaws.com
 
 user: Enviado no convite do desafio
+
 pass: Enviado no convite do desafio
+
 database: ident_[seu nome]
 
 
