@@ -74,6 +74,25 @@ Essa sugestão é apenas para melhor compreensão do desafio. Não é necessári
 
 ## Regras a instruções
 
+#### Regras
+
+1. Deadline entrega: 16/03/2018
+2. Forma de entrega: fork público deste repositório
+3. Se não for possível concluir o desafio por algum motivo entregar até onde foi possível para sua solução ser considerada.
+4. Você poderá utilizar as tecnologias do nosso stack: PHP, Javascript, MySQL
+5. É permitida a utilização de frameworks CSS e Javascript
+6. Não é permitida a utilização de frameworks PHP nem extensões PECL não nativas
+7. Desenvolver a aplicação seguindo os padrões de orientação a objeto e MVC e DAO
+8. A aplicação deverá rodar sem caminhos absolutos, apenas relativos. Ou seja, funcionar em qualquer pasta de um servidor que execute PHP com permissões de acesso aos subdiretórios.
+9. Caso não consiga cumprir algumas das regras, quebre-as mas não deixe de enviar a sua solução.
+
+#### Quesitos de avaliação
+
+1. Organização do código
+2. Design Patterns de programação (Front e Back)
+3. Simplicidade da solução
+4. Nível de acanço no desafio 
+
 #### Acesso ao banco de dados
 
 Já tem um banco de dados criado para facilitar o setup. Sua aplicaçao poderá se conectar direto com ela. Para visualização dos dados sugiro o site http://www.phpmyadmin.co que serve um phpMyAdmin remoto.
