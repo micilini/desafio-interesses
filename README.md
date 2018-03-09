@@ -48,6 +48,15 @@ Utilizada para armazenar os interesses que o usuário segue. Tabela relacional c
 | 1 | 109124 | 7 | 0 | 2018-04-02 09:00:00 | 
 | 1 | 109124 | 20 | 1 | 2018-04-02 09:00:00 | 
 
+## Desafio - Corrigir erros de digitação em massa
+
+Temos que criar um sistema e interface para tratamento humano dessas sugestões. A ideia é que um operador possa acessar o seu sistema e ver a lista de sugestões inputadas pelos usuários. Nesta mesma tela ele poderá redigitar o interesse com um autocomplete em cima dos oficiais para remapear um interesse sugestão para oficial. Isso facilita a correção de erros de digitação.
+
+#### Sugestão de Wireframe
+
+Essa sugestão é apenas para melhor compreensão do desafio. Não é necessário segui-lo, você pode usar suas noções de UX para propor soluções melhores ou ainda mais rápidas de fazer.
+
+![alt text](https://s3.amazonaws.com/assets.mockflow.com/app/wireframepro/company/Cfe63b9ee5fbf41c392871ade38be45ec/projects/D810baa6705b3fc663cb607aa97e0efcc/pages/3fc9324fd9534c229f66f373971bf861/image/3fc9324fd9534c229f66f373971bf861.png "Sugestão Wireframe")
 
 
 
