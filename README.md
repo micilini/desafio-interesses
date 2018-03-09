@@ -26,6 +26,13 @@ Utilizada para armazenar a lista de interesses oficiais
 | --- | --- | --- | --- |
 | Primary Key | Nome do interesse oficial | Abreviação do interesse oficial | Quando o interesse oficial foi inserido no banco
 
+##### Exemplo:
+
+
+| ID          | name                      | abbr  | created |
+| --- | --- | --- | --- |
+| 1 | Cirurgia e Traumatologia Buco-maxilo-facial | CTBMF | 2018-04-02 09:00:00
+
 ### Tabela: interest_suggestion
 
 Utilizada para armazenar a lista de sugestões dos usuários
