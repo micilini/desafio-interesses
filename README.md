@@ -58,7 +58,8 @@ Temos que criar um sistema e interface para tratamento humano dessas sugestões.
 .* Lista sugestões dos usuários: Limite de 30 sugestões com autoload por rolagem
 .* Cada linha deve conter seu campo de busca para remapeamento de interesses
 .* Ao começar a digitar abre autocomplete com interesses oficiais para remapeamento
-.* O operador podera selecionar um interesse oficial para remapear
+.* O operador poderá selecionar um interesse oficial para remapear
+.* Interface responsiva
 
 ##### Ação de remapear
 .* Ao remapear o sistema deve editar a linha relacional da interest_user setando o interestIsSuggestion como 0 e o interestID como o ID do interesse oficial
@@ -78,6 +79,7 @@ Essa sugestão é apenas para melhor compreensão do desafio. Não é necessári
 Já tem um banco de dados criado para facilitar o setup.
 
 host: isl-instance-db-dev.cnqjbbch9s0a.us-east-1.rds.amazonaws.com
+
 user: Enviado no convite do desafio
 pass: Enviado no convite do desafio
 database: ident_[seu nome]
