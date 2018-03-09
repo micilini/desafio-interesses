@@ -90,8 +90,9 @@ Essa sugestão é apenas para melhor compreensão do desafio. Não é necessári
 
 1. Organização do código
 2. Design Patterns de programação (Front e Back)
-3. Simplicidade da solução
-4. Nível de acanço no desafio 
+3. Gestão de índices e performance de Queries no DB
+4. Simplicidade da solução
+5. Nível de avanço e proatividade no desafio 
 
 #### Acesso ao banco de dados
 
