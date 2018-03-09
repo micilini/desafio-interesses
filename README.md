@@ -77,7 +77,7 @@ Essa sugestão é apenas para melhor compreensão do desafio. Não é necessári
 #### Regras
 
 1. Deadline entrega: 16/03/2018
-2. Forma de entrega: fork público deste repositório
+2. Forma de entrega: fork público deste repositório (Separar credenciais de acesso ao banco do código)
 3. Se não for possível concluir o desafio por algum motivo entregar até onde foi possível para sua solução ser considerada.
 4. Você poderá utilizar as tecnologias do nosso stack: PHP, Javascript, MySQL
 5. É permitida a utilização de frameworks CSS e Javascript
