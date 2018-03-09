@@ -71,5 +71,17 @@ Essa sugestão é apenas para melhor compreensão do desafio. Não é necessári
 
 ![alt text](https://lh3.googleusercontent.com/-jamI44AQ5Rk/WqLpx_Lv-qI/AAAAAAAADJI/CePylxE7qbYHbsLTd_Auu9SPpcJD65ppACK8BGAs/s512/2018-03-09.png "Sugestão Wireframe")
 
+## Regras a instruções
+
+#### Acesso ao banco de dados
+
+Já tem um banco de dados criado para facilitar o setup.
+
+host: isl-instance-db-dev.cnqjbbch9s0a.us-east-1.rds.amazonaws.com
+user: Enviado no convite do desafio
+pass: Enviado no convite do desafio
+database: ident_[seu nome]
+
+
 
 
