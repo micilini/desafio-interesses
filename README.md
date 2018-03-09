@@ -18,13 +18,12 @@ Desta forma conseguimos fazer com que a maioria dos interesses sejam oficiais (g
 
 Para facilitar a compreensão do desafio, primeiro estude e tire suas dúvidas sobre a estrutura de dados que é utilizada para gestão de interesses no iDent:
 
-### Tabela: interest
+#### Tabela: interest
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+Utilizada para armazenar a lista de interesses oficiais
+
+| ID          | name                      | abbr  | created |
+| Primary Key | Nome do interesse oficial | Abreviação do interesse oficial | Quando o interesse oficial foi inserido no banco
 
 
 
