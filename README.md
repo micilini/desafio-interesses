@@ -25,7 +25,7 @@ Utilizada para armazenar a lista de interesses oficiais
 | ID          | name                      | abbr  | created |
 | --- | --- | --- | --- |
 | Primary Key | Nome do interesse oficial | Abreviação do interesse oficial | Quando o interesse oficial foi inserido no banco
-| 1 | Cirurgia e Traumatologia Buco-maxilo-facial | CTBMF | 2018-04-02 09:00:00
+| 7 | Cirurgia e Traumatologia Buco-maxilo-facial | CTBMF | 2018-04-02 09:00:00
 
 ### Tabela: interest_suggestion
 
@@ -34,6 +34,7 @@ Utilizada para armazenar a lista de sugestões dos usuários
 | ID          | userID                      | name | created |
 | --- | --- | --- | --- |
 | Primary Key | ID do usuário que fez a sugestão (FK: user.ID) | Nome do interesse sugerido pelo usuário | Quando o interesse  foi sugerido
+| 20 | 109124 | Trauma panfacial | 2018-04-02 09:00:00
 
 ### Tabela: interest_user
 
@@ -42,6 +43,8 @@ Utilizada para armazenar os interesses que o usuário segue. Tabela relacional c
 | ID          | userID                      | interestID | interestIsSuggestion | created |
 | --- | --- | --- | --- | --- |
 | Primary Key | ID do usuário que segue um interesse | ID do interesse ou da sugestão de interesse (FK: interest.ID ou interest_suggestion.ID) | Flag que indica se o interesse é sugesto ou não. Se 1 então interestID => interest_suggestion.ID se 0 então interestID => interest.ID | Quando o interesse foi seguido | 
+| 1 | 109124 | 7 | 0 | 2018-04-02 09:00:00 | 
+| 1 | 109124 | 20 | 1 | 2018-04-02 09:00:00 | 
 
 
 
