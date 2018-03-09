@@ -34,5 +34,14 @@ Utilizada para armazenar a lista de sugestões dos usuários
 | --- | --- | --- | --- |
 | Primary Key | ID do usuário que fez a sugestão (FK: user.ID) | Nome do interesse sugerido pelo usuário | Quando o interesse  foi sugerido
 
+### Tabela: interest_user
+
+Utilizada para armazenar os interesses que o usuário segue. Tabela relacional com interest ou interest_suggestion dependendo da flag interestIsSuggestion
+
+| ID          | userID                      | interestID | interestIsSuggestion | created |
+| --- | --- | --- | --- | --- |
+| Primary Key | ID do usuário que segue um interesse | ID do interesse ou da sugestão de interesse (FK: interest.ID ou interest_suggestion.ID) | Flag que indica se o interesse é sugesto ou não. Se 1 então interestID => interest_suggestion.ID se 0 então interestID => interest.ID | Quando o interesse foi seguido | 
+
+
 
 
