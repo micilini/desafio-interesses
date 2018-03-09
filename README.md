@@ -23,6 +23,7 @@ Para facilitar a compreensão do desafio, primeiro estude e tire suas dúvidas s
 Utilizada para armazenar a lista de interesses oficiais
 
 | ID          | name                      | abbr  | created |
+| --- | --- | --- | --- |
 | Primary Key | Nome do interesse oficial | Abreviação do interesse oficial | Quando o interesse oficial foi inserido no banco
 
 
