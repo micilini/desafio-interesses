@@ -81,7 +81,7 @@ Essa sugestão é apenas para melhor compreensão do desafio. Não é necessári
 3. Se não for possível concluir o desafio por algum motivo entregar até onde foi possível para sua solução ser considerada.
 4. Você poderá utilizar as tecnologias do nosso stack: PHP, Javascript, MySQL
 5. É permitida a utilização de frameworks CSS e Javascript
-6. Não é permitida a utilização de frameworks PHP nem extensões PECL não nativas
+6. Não é permitida a utilização de frameworks PHP
 7. Desenvolver a aplicação seguindo os padrões de orientação a objeto e MVC e DAO
 8. A aplicação deverá rodar sem caminhos absolutos, apenas relativos. Ou seja, funcionar em qualquer pasta de um servidor que execute PHP com permissões de acesso aos subdiretórios.
 9. Caso não consiga cumprir algumas das regras, quebre-as mas não deixe de enviar a sua solução.
