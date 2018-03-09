@@ -2,9 +2,9 @@
 
 ## Vaga Fullstack Developer Trainee
 
-Você foi secionado para o desafio para vaga de Trainee Fullstack do iDent. \o/
+Você foi secionado para o desafio Trainee Fullstack do iDent. \o/
 
-Esse desafio serve para podermos avaliar melhor seus conhecimentos práticos no nosso stack de desenvolvimento. (PHP, MySQL, jQuery, HTML Responsivo). Não há soluçoes certas nem erradas, ao topar o desafio esse é um espaço para você mostrar até aonde seus conhecimentos vão. As melhores soluções ou com maior potencial serão selecionadas para a vaga.
+Este desafio serve para podermos avaliar melhor seus conhecimentos práticos no nosso stack de desenvolvimento (PHP, MySQL, jQuery, HTML Responsivo). Não há soluções certas ou erradas, ok? Esse é um espaço para você mostrar todo seu conhecimento. As melhores soluções ou com maior potencial serão selecionadas para a vaga.
 
 Boa sorte!
 
