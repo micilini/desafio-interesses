@@ -52,11 +52,24 @@ Utilizada para armazenar os interesses que o usuário segue. Tabela relacional c
 
 Temos que criar um sistema e interface para tratamento humano dessas sugestões. A ideia é que um operador possa acessar o seu sistema e ver a lista de sugestões inputadas pelos usuários. Nesta mesma tela ele poderá redigitar o interesse com um autocomplete em cima dos oficiais para remapear um interesse sugestão para oficial. Isso facilita a correção de erros de digitação.
 
+#### Requisitos
+
+##### Tela: Gerenciador de interesses
+.* Lista sugestões dos usuários: Limite de 30 sugestões com autoload por rolagem
+.* Cada linha deve conter seu campo de busca para remapeamento de interesses
+.* Ao começar a digitar abre autocomplete com interesses oficiais para remapeamento
+.* O operador podera selecionar um interesse oficial para remapear
+
+##### Ação de remapear
+.* Ao remapear o sistema deve editar a linha relacional da interest_user setando o interestIsSuggestion como 0 e o interestID como o ID do interesse oficial
+.* Além disso deve apagar a sugestão do banco após o remapeamento
+.* Plus (desafio extra opcional)! Se até aqui você se deu bem e quer ir além, pode ver uma forma de remapear casos identicos automaticamente. Ex: Dois usuários sugeriram trauma panfacial e o operador remapeou um deles para trauma, desta forma ambos seriam remapeados para dar mais agilidade para o operador.
+
 #### Sugestão de Wireframe
 
 Essa sugestão é apenas para melhor compreensão do desafio. Não é necessário segui-lo, você pode usar suas noções de UX para propor soluções melhores ou ainda mais rápidas de fazer.
 
-![alt text](https://s3.amazonaws.com/assets.mockflow.com/app/wireframepro/company/Cfe63b9ee5fbf41c392871ade38be45ec/projects/D810baa6705b3fc663cb607aa97e0efcc/pages/3fc9324fd9534c229f66f373971bf861/image/3fc9324fd9534c229f66f373971bf861.png "Sugestão Wireframe")
+![alt text](https://lh3.googleusercontent.com/-jamI44AQ5Rk/WqLpx_Lv-qI/AAAAAAAADJI/CePylxE7qbYHbsLTd_Auu9SPpcJD65ppACK8BGAs/s512/2018-03-09.png "Sugestão Wireframe")
 
 
 
