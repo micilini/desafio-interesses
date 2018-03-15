@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Obrigado por nos informar seus interesses | iDent{% endblock %}
+{% block body %}
+<header id="page-top">
+   <div class="container forming">
+      <div class="row">
+         <div class="col-sm-6 col-sm-offset-3 form-box">
+            <div class="form-top" style="background:#F3F3F3;">
+               <div class="form-top" style="text-align:center; background:#F3F3F3; padding-bottom:5px;">
+                  <img src="public/assets/images/dente_novo.png" width="120" style="padding-top:12px;"/>
+                  <h3 style="color:#9cd151"><strong>Obrigado por se cadastrar</strong></h3>
+                  <p>A plataforma irá personalizar os resultados de acordo com os seguintes interesses:</p>
+               </div>
+            </div>
+            <div class="form-bottom" style="text-align:center; padding: 25px 25px 3px 25px;">
+               <form role="form" action="" method="post" class="login-form">
+                  <div class="form-group">
+                     <div id="tags_inserted" style="margin-bottom:20px;">
+                        {% for key, value in datas %}
+                        <div class="btn btn-info" style="width:auto; margin:5px;">{{ value }} <i class="far fa-check-circle"></i></div>
+                        {% endfor %}
+                     </div>
+                  </div>
+               </form>
+            </div>
+            <div class="form-bottom" style="text-align:center; background:transparent; padding: 25px 25px 15px 25px; font-size:18px;">
+               <a href="admin/manual">
+               <p>Acessar Plataforma <i class="fas fa-sign-in-alt"></i><a>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+{% endblock %}

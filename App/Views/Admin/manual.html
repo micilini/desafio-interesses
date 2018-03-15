@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}(Manual) Gerenciador de Interesses{% endblock %}
+{% block body %}
+<header id="page-top">
+   <div class="container forming">
+      <div class="row">
+         <div class="col-sm col-sm-offset form-box">
+            <div class="form-top" style="background:#F3F3F3;">
+               <div class="form-top" style="text-align:center; background:#F3F3F3; padding-bottom:5px;">
+                  <h3><strong>(Manual) Remapeamento de Interesses <i class="fas fa-hand-paper"></i></strong></h3>
+                  <hr />
+                  <p><small>Dica: Não se esqueca de pressionar a tecla <strong>ENTER</strong> para remapear o interesse desejado</small></p>
+                  <table id="example" class="display" style="width:100%">
+                     <thead>
+                        <tr>
+                           <th>Nome</th>
+                           <th>Remapear</th>
+                           <th>Tipo</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        {% for key, value in allInterests %}
+                        <tr>
+                           {% if value['revised'] is not defined %}
+                           <td id="nameInterest" data-id="{{ value['id_interest'] }}official">{{ value['name'] }}</td>
+                           <td><input type="text" name="tags" data-id="{{ value['id_interest'] }}" data-type="official" class="form-control" maxlength="200" placeholder="Novo Interesse"></td>
+                           <td style="color:#2ecc71;">Oficial</td>
+                           {% else %}
+                           <td id="nameInterest" data-id="{{ value['id_interest_suggestion'] }}suggest">{{ value['name'] }}</td>
+                           <td><input type="text" name="tags" data-id="{{ value['id_interest_suggestion'] }}" data-type="suggest" class="form-control" maxlength="200" placeholder="Novo Interesse"></td>
+                           <td style="color:#f1c40f;">Sugesto</td>
+                           {% endif %}
+                        </tr>
+                        {% endfor %}
+                        </tfoot>
+                  </table>
+               </div>
+            </div>
+            <div class="form-bottom" style="text-align:center; background:transparent; padding: 25px 25px 15px 25px; font-size:18px;">
+               <a href="/iDent/admin">
+               <p>Acessar Remapeamento Rápido <i class="fas fa-fighter-jet"></i><a>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+<script src="public/assets/js/main/admin_manual.js"></script> 
+{% endblock %}

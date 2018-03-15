@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Bem vindo a iDent{% endblock %}
+{% block body %}
+<header id="page-top">
+   <div class="container forming">
+      <div class="row">
+         <div class="col-sm-6 col-sm-offset-3 form-box">
+            <a href="home"><div class="form-top">
+               <div class="form-top" style="text-align:center; padding-bottom:5px;">
+                  <img src="public/assets/images/client.png" width="120" style="padding-top:12px;"/>
+                  <h3 style="color:black"><strong>Sou um Dentista</strong></h3>
+                  <p>Tenha a experiencia de inserir seus interesses na plataforma, aqui voce é o usuario/dentista!</p>
+               </div>
+            </div></a>
+            <a href="admin"><div class="form-top" style="border-radius:0px 0px 4px 4px; background:#2E2E38;">
+               <div class="form-top" style="text-align:center; padding-bottom:5px; background:#2E2E38; color:white;">
+                  <img src="public/assets/images/operator.png" width="120" style="padding-top:12px;"/>
+                  <h3 style="color:#9cd151"><strong>Sou um Operador</strong></h3>
+                  <p>Edite e Remapeie todos os interesses existentes na plataforma, sinta-se como um administrador!</p>
+               </div>
+            </div></a>
+         </div>
+      </div>
+   </div>
+</header>
+<script src="public/assets/js/main/index_home.js"></script> 
+{% endblock %}

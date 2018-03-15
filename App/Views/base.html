@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>{% block title %}{% endblock %}</title>
+      <link rel="shortcut icon" type="image/x-icon" href="public/assets/images/favicon.ico">
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <link href="public/assets/css/main.css" rel="stylesheet">
+      <link href="public/assets/fontawesome/css/fontawesome-all.css" rel="stylesheet">
+      <link rel="stylesheet" href="public/assets/css/form-elements.css">
+      <link href="public/assets/css/magic-check.css" rel="stylesheet">
+      <script src="public/assets/js/easyautocomplete/jquery.easy-autocomplete.min.js"></script> 
+      <link rel="stylesheet" href="public/assets/js/easyautocomplete/easy-autocomplete.css">
+      <link rel="stylesheet" type="text/css" href="public/assets/dataTables/datatables.min.css"/>
+      <script type="text/javascript" src="public/assets/dataTables/datatables.min.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   </head>
+   <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="container">
+            <div class="navbar-header page-scroll">
+               <a class="navbar-brand" href="/iDent" style="padding: 0px 15px;">
+               <img src="public/assets/images/logoNegativeSmall.png" alt="iDent. A rede profissional dos dentistas." style="display: inline-block;" height="50">
+               </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                  <li class="hidden">
+                     <a href="#page-top"></a>
+                  </li>
+                  <li class="page-scroll">
+                     <button type="button" class="btn btn-success" style="background:#8c388c; border:0px; margin-top:12px;"><i class="fas fa-sign-out-alt"></i> Sair da Plataforma</button>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="top-round-rainbow">
+         </div>
+      </nav>
+      {% block body %}
+      {% endblock %}
+   </body>
+</html>
+<script src="public/assets/js/main/base.js"></script>

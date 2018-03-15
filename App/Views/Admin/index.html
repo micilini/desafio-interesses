@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}Gerenciador de Interesses{% endblock %}
+{% block body %}
+<header id="page-top">
+   <div class="container forming">
+      <div class="row">
+         <div class="col-sm-6 col-sm-offset-3 form-box">
+            <div class="form-top" style="background:#F3F3F3;">
+               <div class="form-top" style="text-align:center; background:#F3F3F3; padding-bottom:5px;">
+                  <h3><strong>Remapeamento de Interesses</strong></h3>
+                  <hr />
+                  <div id="tag_inserted" style="margin-bottom:20px; width:100%; ">
+                     <div id="tag_interest" data-name="{{ interest_suggestion[0]['name'] }}" data-id="{{ interest_suggestion[0]['id_interest_suggestion'] }}" style="color: #fff;
+                        background-color: #5cb85c; border-radius: 4px; font-size: 20px;
+                        font-weight: 300;
+                        padding:15px;
+                        border-color: #4cae4c; word-wrap: break-word !important; width:100%; word-break: break-all !important;">{{ interest_suggestion[0]['name'] }}</div>
+                  </div>
+                  {% if equalsInterestCount[0]['total'] > 1 %}
+                  <hr />
+                  <p>
+                  <div class="checkbox">
+                     <label>
+                     <input type="checkbox" value="" id="multiple_remap">
+                     <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                     <strong>{{ equalsInterestCount[0]['total'] }}</strong> Interesses identicos foram encontrados, deseja remapear ?
+                     </label>
+                  </div>
+                  </p>
+                  {% endif %}
+               </div>
+            </div>
+            <div class="form-bottom" style="text-align:center; padding: 25px 25px 3px 25px;">
+               <form role="form" action="" method="post" class="login-form">
+                  <div class="form-group">
+                     <input type="text" name="tags" maxlength="200" placeholder="Digite o interesse..." class="form-username form-control" id="form-username">
+                     <small style="color:#868e96;">(Digite o interesse que irá substituir o informado acima)</small>
+                  </div>
+                  <button id="remap" type="submit" style="max-width:50%; background-color: #f0ad4e;
+                     border-color: #f0ad4e;" class="btne">Remapear <i class="fas fa-save"></i></button>
+                  <div class="form-group" style="text-align:right; margin-top:12px;">
+                     <small style="color:#868e96;">Interesses Restantes {{ allInterestCount[0]['total'] }}</small>
+                  </div>
+               </form>
+            </div>
+            <div class="form-bottom" style="text-align:center; background:transparent; padding: 25px 25px 15px 25px; font-size:18px;">
+               <a href="/admin/manual">
+               <p>Acessar Remapeamento Manual <i class="fas fa-hand-paper"></i><a>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+<script src="public/assets/js/main/index_admin.js"></script> 
+{% endblock %}
