@@ -2,7 +2,9 @@
 var inputTags = [];
 
 var options = {
-	url: "iDent/public/assets/interests.json",
+	url: function(phrase) {
+		return "home/returnAllInterests/?phrase=" + phrase;
+	},
 
 	getValue: "name",
 

@@ -84,5 +84,22 @@ class Home extends \Core\Controller
         return true;
         
     }
+	
+	public function returnAllInterestsAction(){
+	
+	  $currentWords = self::getCurrentWords();
+      $allInterestsNames = InterestDAO::getAllInterestOficialsByWords($currentWords);
+	
+	  if(is_array($allInterestsNames)){
+		echo json_encode($allInterestsNames);
+	  }
+
+	}
     
+	private static function getCurrentWords(){
+		$parts = parse_url($_SERVER['REQUEST_URI']);
+        parse_str($parts['query'], $query);
+        return $query['phrase'];
+	}
+	
 }

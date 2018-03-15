@@ -258,13 +258,13 @@ class InterestDAO extends \Core\Model
         
     }
     
-    public static function getAllInterestOficials()
+    public static function getAllInterestOficials($fields = '*')
     {
         
         try {
             $db = static::getDB();
             
-            $stmt = $db->prepare('SELECT * FROM interest');
+            $stmt = $db->prepare('SELECT '.$fields.' FROM interest');
             $stmt->execute();
             $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
             
@@ -331,6 +331,27 @@ class InterestDAO extends \Core\Model
             $stmtUpdate->execute();
             
             return true;
+            
+        }
+        catch (PDOException $e) {
+            return false;
+            //echo $e->getMessage(); Podemos salvar em um arquivo de log
+        }
+        
+    }
+	
+	public static function getAllInterestOficialsByWords($piece_word)
+    {
+        
+        try {
+            $db = static::getDB();
+            
+            $stmt = $db->prepare('SELECT name FROM interest WHERE UPPER(name) LIKE UPPER(:piece_word)');
+			$stmt->bindValue(":piece_word", $piece_word.'%');
+            $stmt->execute();
+            $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            
+            return $results;
             
         }
         catch (PDOException $e) {

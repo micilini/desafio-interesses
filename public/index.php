@@ -36,7 +36,13 @@ $router->add('', ['controller' => 'Home', 'action' => 'initial']);
 $router->add('home', ['controller' => 'Home', 'action' => 'index']);
 $router->add('admin', ['controller' => 'Admin', 'action' => 'index']);
 
+$router->add('/', ['controller' => 'Home', 'action' => 'initial']);
+$router->add('home/', ['controller' => 'Home', 'action' => 'index']);
+$router->add('admin/', ['controller' => 'Admin', 'action' => 'index']);
+
 $router->add('{controller}/{action}');
 $router->add('{controller}/{id:\d+}/{action}');
+$router->add('{controller}/{action}/');
+$router->add('{controller}/{id:\d+}/{action}/');
     
 $router->dispatch($_SERVER['QUERY_STRING']);
