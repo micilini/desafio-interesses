@@ -3,7 +3,7 @@ var inputTags = [];
 
 var options = {
 	url: function(phrase) {
-		return "../home/returnAllInterests/?phrase=" + phrase;
+		return "/iDent/home/returnAllInterests/?phrase=" + phrase;
 	},
 
 	getValue: "name",
