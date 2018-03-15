@@ -346,7 +346,7 @@ class InterestDAO extends \Core\Model
         try {
             $db = static::getDB();
             
-            $stmt = $db->prepare('SELECT name FROM interest WHERE UPPER(name) LIKE UPPER(:piece_word) LIMIT 0,8');
+            $stmt = $db->prepare('SELECT name FROM interest WHERE UPPER(name) LIKE UPPER(:piece_word) LIMIT 0,8');//Limite de dados retornado 0 de 8
 			$stmt->bindValue(":piece_word", $piece_word.'%');
             $stmt->execute();
             $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
