@@ -1,5 +1,28 @@
 # Desafio Interesses iDent
 
+Este é um desafio para a vaga de desenvolvedor Fullstack Traiine da iDent!
+
+## Como rodar este projeto ?
+
+Simples, basta voce criar uma pasta no seu localhost chamada `iDent` e jogar todos os arquivos existentes no github lá pra dentro e pronto ;)
+
+É claro, a pasta `iDent` deve estar contida dentro de `www` ou `html` para que possa funcionar e ser acessada por http://localhost/iDent (Caso voce estiver usando no seu servidor local).
+
+E se mesmo assim voce resolveu jogar a pasta `iDent` dentro de uma outra subpasta, é muito provavel que você tenha que fazer modificações nos arquivos `.htaccess` (O caminho do **RewriteBase**) existentes dentro do projeto (Um deles esta na `pasta principal`, e o outro esta na pasta `public`).
+
+## Telas do Projeto
+
+![Screenshot](https://image.ibb.co/edUgkH/tela_1.png)
+![Screenshot](https://image.ibb.co/bZFyXx/Tela_2.png)
+![Screenshot](https://image.ibb.co/f47Z5H/Tela_3.png)
+![Screenshot](https://image.ibb.co/m0qAec/Tela_4.png)
+![Screenshot](https://image.ibb.co/bOWSQH/Tela_5.png)
+![Screenshot](https://image.ibb.co/cJJVec/Tela_6.png)
+
+## Considerações!
+
+Este projeto foi criado inicialmente no Windows 10, utilizando o programa `WampServer 3.0.6`.
+
 ## Vaga Fullstack Developer Trainee
 
 Você foi secionado para o desafio Trainee Fullstack do iDent. \o/
